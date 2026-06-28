@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--
-Project 1.10 
-Author: Tiara Jones
-Date: 06/28/2026
--->
-<meta charset="UTF-8" />
-<title> workspace</title>
-<meta name="author" content="Tiara Jones" />
-<meta name="keywords" content="About,Projects,Contact" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Website (Tiajon1585)">
+    <meta name="author" content="Tiara Jones">
+    <title>Tiara Jones</title>
 </head>
 
 <body>
 
-<header>
-<h1>Welcome Everyone.</h1>
-</header>
-<nav>
-   <ul>
-      <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
-   </ul>
-</nav>
-<main>
-<section id="about">
-      <header>
-         <h2>About</h2>
-      </header>
-      <p>About Paragraph.</p>
-</section>
- 
+    <!-- Header -->
+    <header>
+        <h1>Tiara Jones</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Tiara Jones and I am Single mother of 3. I am currently enrolled in ECPI
+                Software Development and Coding program while pursuing my bachelor's
+                degree in Project Manangement. 
+            </p>
+
+            <p>
+                My goal is to become software developer and project
+                manager.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <p>
+                Here are a few of the web development projects I have completed. 
+            </p>
+
+            <!-- Project 1 -->
+            <a href="https://github.com/tiajon1585/3.10-midterm/blob/main/storefront.html">
+                <img src="https://chatgpt.com/c/6a415cd0-c724-83ea-b065-923ead8989c0"
+                     alt="Project 1">
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/tiajon1585/Final-Performance-Assessment/blob/main/blog.html">
+                <img src="file:///C:/Users/tiara/Downloads/blog%20(15).html"
+                     alt="Project 2">
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://github.com/tiajon1585/tiajon1585.github.io/blob/main/index.html">
+                <img src="file:///C:/Users/tiara/Downloads/index%20(2).html"
+                     alt="Project 3">
+            </a>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          cols="40"
+                          required></textarea><br><br>
+
+                <input type="submit" value="Send Message">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tiara Jones. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
