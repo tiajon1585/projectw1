@@ -1,0 +1,13 @@
+#universityResources {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+#personalProjects {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: lightpurple;
+}
