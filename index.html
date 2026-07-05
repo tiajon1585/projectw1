@@ -13,7 +13,10 @@
     <!-- Header -->
     <header>
         <h1>Tiara Jones</h1>
-
+<label>
+    <input type="checkbox" id="darkModeToggle">
+    Dark Mode
+</label>
         <!-- Navigation -->
         <nav>
             <ul>
@@ -31,7 +34,7 @@
         <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
-
+           
             <p>
                 My name is Tiara Jones and I am Single mother of 3. I am currently enrolled in ECPI
                 Software Development and Coding program while pursuing my bachelor's
@@ -42,6 +45,9 @@
                 My goal is to become software developer and project
                 manager.
             </p>
+
+            <h3>Skills</h3>
+            <ul id="skillsList"></ul>
         </section>
 
          <!-- Featured Content Section -->
@@ -122,7 +128,7 @@
                           cols="40"
                           required></textarea><br><br>
 
-                <input type="submit" value="Send Message">
+                <input type="submit" id="submitBtn" value="Send Message">
 
             </form>
         </section>
