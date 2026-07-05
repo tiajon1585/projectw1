@@ -5,7 +5,6 @@ message.textContent = "Welcome, " + userName + "!";
 
 document.body.insertBefore(message, document.body.firstChild);
 
-    // Featured content
     let projectCount = 3;
 
     let universityResources = document.getElementById("universityResources");
@@ -30,14 +29,12 @@ document.body.insertBefore(message, document.body.firstChild);
         skillsList.appendChild(listItem);
     });
 
-    // Dark Mode
     const darkModeToggle = document.getElementById("darkModeToggle");
 
     darkModeToggle.addEventListener("change", function () {
         document.body.classList.toggle("dark-mode");
     });
 
-    // Contact Form
     const submitBtn = document.getElementById("submitBtn");
 
     submitBtn.addEventListener("click", function (event) {
