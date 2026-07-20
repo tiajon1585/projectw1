@@ -5,7 +5,7 @@ message.textContent = "Welcome, " + userName + "!";
 
 document.body.insertBefore(message, document.body.firstChild);
 
-    let projectCount = 3;
+    let projectCount = 2;
 
     let universityResources = document.getElementById("universityResources");
     let personalProjects = document.getElementById("personalProjects");
