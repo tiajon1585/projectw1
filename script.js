@@ -23,26 +23,40 @@ document.body.insertBefore(message, document.body.firstChild);
 
     const skillsList = document.getElementById("skillsList");
 
-    skills.forEach(function(skill) {
-        const listItem = document.createElement("li");
-        listItem.textContent = skill;
-        skillsList.appendChild(listItem);
-    });
+    // Dynamically add a new project paragraph
+const newProject = document.createElement("p");
+newProject.textContent =
+    "Recent Project: I created a personal portfolio website using HTML, CSS, and JavaScript.";
 
+document.getElementById("projects").appendChild(newProject);
+
+    // Modify existing elements
+document.querySelector("#about h2").textContent = "About Tiara";
+
+document.getElementById("featured").style.backgroundColor = "#f0f8ff";
+    
     const darkModeToggle = document.getElementById("darkModeToggle");
 
     darkModeToggle.addEventListener("change", function () {
         document.body.classList.toggle("dark-mode");
     });
 
-    const submitBtn = document.getElementById("submitBtn");
+   const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
 
-    submitBtn.addEventListener("click", function (event) {
-        event.preventDefault();
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    formStatus.textContent = "Sending message...";
+
+    setTimeout(function () {
 
         const name = document.getElementById("name").value;
 
-        alert("Thank you, " + name + ", your message has been sent!");
-    });
+        formStatus.textContent =
+            "Thank you, " + name + "! Your message has been sent Successfully!";
 
+    }, 2500);
+
+});
 };
