@@ -29,12 +29,32 @@ document.getElementById("projects").appendChild(newProject);
 document.querySelector("#about h2").textContent = "About Tiara";
 
 document.getElementById("featured").style.backgroundColor = "#f0f8ff";
-    
+
+// dark mode
     const darkModeToggle = document.getElementById("darkModeToggle");
 
-    darkModeToggle.addEventListener("change", function () {
-        document.body.classList.toggle("dark-mode");
-    });
+// Load saved preference
+if (localStorage.getItem("darkMode") === "enabled") {
+    document.body.classList.add("dark-mode");
+    darkModeToggle.checked = true;
+}
+
+// Save preference when changed
+darkModeToggle.addEventListener("change", function () {
+
+    if (darkModeToggle.checked) {
+
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("darkMode", "enabled");
+
+    } else {
+
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("darkMode", "disabled");
+
+    }
+
+});
 
    const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
