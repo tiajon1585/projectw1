@@ -75,7 +75,6 @@ contactForm.addEventListener("submit", function (event) {
 
 });
 
- // Welcome Modal
 
 const modal = document.getElementById("welcomeModal");
 const closeModal = document.getElementById("closeModal");
