@@ -54,4 +54,12 @@ contactForm.addEventListener("submit", function (event) {
     }, 2500);
 
 });
+
+// Welcome Modal
+const modal = document.getElementById("welcomeModal");
+const closeModal = document.getElementById("closeModal");
+
+closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+});
 };
