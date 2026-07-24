@@ -1,5 +1,5 @@
-window.onload = function ()
-// I removed the prompt() that was here
+window.onload = function () {
+
     let projectCount = 3;
 
     let universityResources = document.getElementById("universityResources");
@@ -17,6 +17,65 @@ window.onload = function ()
     const skills = ["HTML", "CSS", "JavaScript", "Git", "GitHub"];
 
     const skillsList = document.getElementById("skillsList");
+
+    const projects = [
+    {
+        title: "Storefront Website",
+        summary: "A storefront website created using HTML and CSS that demonstrates page layout, navigation, and styling.",
+        image: "images/storefront.png",
+        repository: "https://github.com/tiajon1585/3.10-midterm/blob/main/storefront.html"
+    },
+    {
+        title: "Blog Project",
+        summary: "A blog webpage developed as a final performance assessment using HTML and CSS.",
+        image: "https://placehold.co/300x200?text=Blog+Project",
+        repository: "https://github.com/tiajon1585/Final-Performance-Assessment/blob/main/blog.html"
+    },
+    {
+        title: "Personal Portfolio",
+        summary: "My personal portfolio website showcasing my projects, skills, and contact information.",
+        image: "https://placehold.co/300x200?text=Portfolio",
+        repository: "https://github.com/tiajon1585/tiajon1585.github.io/blob/main/index.html"
+    }
+];
+    if (sessionStorage.getItem("projects") === null) {
+
+    sessionStorage.setItem("projects", JSON.stringify(projects));
+
+}
+
+    const projectsContainer =
+document.getElementById("projectsContainer");
+
+storedProjects.forEach(function(project) {
+
+    const card = document.createElement("div");
+
+    const title = document.createElement("h3");
+    title.textContent = project.title;
+
+    const summary = document.createElement("p");
+    summary.textContent = project.summary;
+
+    const image = document.createElement("img");
+    image.src = project.image;
+    image.alt = project.title;
+
+    const link = document.createElement("a");
+    link.href = project.repository;
+    link.textContent = "View Repository";
+    link.target = "_blank";
+
+    card.appendChild(title);
+    card.appendChild(image);
+    card.appendChild(summary);
+    card.appendChild(link);
+
+    projectsContainer.appendChild(card);
+
+});
+const storedProjects =
+JSON.parse(sessionStorage.getItem("projects"));
 
     // Dynamically add a new project paragraph
 const newProject = document.createElement("p");
