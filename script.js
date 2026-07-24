@@ -18,6 +18,12 @@ window.onload = function () {
 
     const skillsList = document.getElementById("skillsList");
 
+    skills.forEach(function(skill) {
+    const listItem = document.createElement("li");
+    listItem.textContent = skill;
+    skillsList.appendChild(listItem);
+});
+
     const projects = [
     {
         title: "Storefront Website",
